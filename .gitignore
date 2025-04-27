@@ -1,0 +1,4 @@
+# my-backend-api/.gitignore
+node_modules
+.env
+.DS_Store
