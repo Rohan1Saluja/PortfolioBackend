@@ -22,7 +22,7 @@ Hardik Srivastava made React Native more Native with a deep dive into Native Mod
 The panel with Shivraj Kumar, Veena P D, sandeep Butte, and Hardik Srivastava, hosted by Sanket Sahu, was fantastic. They discussed the future of React Native and its evolving landscape.
 
 🤝 Another great place to network with brilliant minds in the community. Huge thanks to GeekyAnts for organizing such an insightful and engaging event!`,
-    imageUrls: [
+    images: [
       "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-and-react-native1.jpg",
       "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-and-react-native2.jpg",
       "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-and-react-native3.jpg",
@@ -56,7 +56,7 @@ AI-Powered Search by Ajay Laxman
 Voice Chatbot with React & ElevenLabs by Pratik Yadav
 Fooling AI and Attacks in AI by Khushi Gupta
 Excited to explore these ideas in upcoming projects!`,
-    imageUrls: [
+    images: [
       "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-bangalore1.jpeg",
       "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-bangalore2.jpeg",
       "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-bangalore3.jpeg",
