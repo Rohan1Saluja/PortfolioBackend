@@ -11,13 +11,15 @@ if (process.env.NODE_ENV !== "production") {
 const express = require("express");
 const cors = require("cors");
 // Ensure these paths are relative to THIS index.js location
-const corsOptions = require("./config/corsOptions"); // Should be correct if config/ is at the same level
-const { handleContactForm } = require("./controllers/contactController"); // Should be correct if controllers/ is at the same level
+const corsOptions = require("./config/corsOptions");
+const { handleContactForm } = require("./controllers/contactController");
+const eventRoutes = require("./routes/eventRoutes");
 
 const app = express();
 
 app.use(cors(corsOptions));
 app.use(express.json());
+app.use("/api/events", eventRoutes);
 
 // --- Routes ---
 // This defines the path *within* the Express app running as the serverless function.
