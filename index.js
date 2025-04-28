@@ -19,13 +19,9 @@ const app = express();
 
 app.use(cors(corsOptions));
 app.use(express.json());
-app.use("/api/events", eventRoutes);
 
 // --- Routes ---
-// This defines the path *within* the Express app running as the serverless function.
-// Vercel routes incoming requests (e.g., to your-backend.vercel.app/api/contact)
-// potentially to the root of this function, then Express takes over.
-// Keep '/api/contact' if your frontend calls that specific path on the backend URL.
+app.use("/api/events", eventRoutes);
 app.post("/api/contact", handleContactForm);
 
 // Example: If you wanted the function at your-backend.vercel.app/ to handle POST directly:
