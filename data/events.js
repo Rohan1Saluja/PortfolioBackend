@@ -23,12 +23,12 @@ The panel with Shivraj Kumar, Veena P D, sandeep Butte, and Hardik Srivastava, h
 
 🤝 Another great place to network with brilliant minds in the community. Huge thanks to GeekyAnts for organizing such an insightful and engaging event!`,
     images: [
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-and-react-native1.jpg",
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-and-react-native2.jpg",
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-and-react-native3.jpg",
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-and-react-native4.jpg",
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-and-react-native5.jpg",
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-and-react-native6.jpg",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-and-react-native1.webp",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-and-react-native2.webp",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-and-react-native3.webp",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-and-react-native4.webp",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-and-react-native5.webp",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-and-react-native6.webp",
     ],
   },
   {
@@ -57,14 +57,14 @@ Voice Chatbot with React & ElevenLabs by Pratik Yadav
 Fooling AI and Attacks in AI by Khushi Gupta
 Excited to explore these ideas in upcoming projects!`,
     images: [
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-bangalore1.jpeg",
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-bangalore2.jpg",
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-bangalore3.jpg",
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-bangalore4.jpg",
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-bangalore5.jpg",
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-bangalore6.jpg",
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-bangalore7.jpg",
-      "https://twf0nxfqsozxnord.public.blob.vercel-storage.com/react-bangalore8.jpg",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-bangalore1.webp",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-bangalore2.webp",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-bangalore3.webp",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-bangalore4.webp",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-bangalore5.webp",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-bangalore6.webp",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-bangalore7.webp",
+      "https://ovtcziwcyhcn9pxj.public.blob.vercel-storage.com/react-bangalore8.webp",
     ],
   },
 ];
