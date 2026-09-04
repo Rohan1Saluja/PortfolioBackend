@@ -14,6 +14,7 @@ const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
 const { handleContactForm } = require("./controllers/contactController");
 const eventRoutes = require("./routes/eventRoutes");
+const leetcodeRoutes = require("./routes/leetcodeRoutes");
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.use(express.json());
 
 // --- Routes ---
 app.use("/api/events", eventRoutes);
+app.use("/api/leetcode", leetcodeRoutes);
 app.post("/api/contact", handleContactForm);
 
 // Example: If you wanted the function at your-backend.vercel.app/ to handle POST directly:
