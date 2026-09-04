@@ -4,18 +4,19 @@
 const allowedOrigins = [
   process.env.FRONTEND_URL_DEV,
   process.env.FRONTEND_URL_PROD,
+  "http://localhost:5173",
 ].filter(Boolean); // Filter out undefined values if some aren't set
 
 if (allowedOrigins.length === 0 && process.env.NODE_ENV !== "production") {
   console.warn(
-    "CORS Warning: No FRONTEND_URL_DEV or FRONTEND_URL_PROD defined in env. Allowing all origins for local development ONLY."
+    "CORS Warning: No FRONTEND_URL_DEV or FRONTEND_URL_PROD defined in env. Allowing all origins for local development ONLY.",
   );
 } else if (
   allowedOrigins.length === 0 &&
   process.env.NODE_ENV === "production"
 ) {
   console.error(
-    "CORS Error: No FRONTEND_URL_PROD defined in production environment!"
+    "CORS Error: No FRONTEND_URL_PROD defined in production environment!",
   );
   // Consider throwing an error in production if no origins are set
 }
