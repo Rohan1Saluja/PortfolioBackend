@@ -59,11 +59,18 @@ const getLeetcodeProfile = async (username, year) => {
 
   const submissionCalendar = JSON.parse(calendar?.submissionCalendar || "{}");
 
+  const totalSubmissions = Object.values(submissionCalendar).reduce(
+    (total, count) => {
+      return total + Number(count);
+    },
+    0,
+  );
+
   const submissions = Object.entries(submissionCalendar).map(
     ([timestamp, count]) => ({
       timestamp: Number(timestamp),
       date: new Date(Number(timestamp) * 1000).toISOString().slice(0, 10),
-      count,
+      count: Number(count),
     }),
   );
 
@@ -78,6 +85,7 @@ const getLeetcodeProfile = async (username, year) => {
 
     stats: {
       totalSolved: solved.all || 0,
+      totalSubmissions,
       easySolved: solved.easy || 0,
       mediumSolved: solved.medium || 0,
       hardSolved: solved.hard || 0,
