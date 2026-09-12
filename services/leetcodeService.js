@@ -69,6 +69,7 @@ const getLeetcodeProfile = async (username, year) => {
   }
 
   const user = result.data?.matchedUser;
+  const recentSubmissions = result.data?.recentAcSubmissionList;
 
   if (!user) {
     throw new Error("LeetCode user not found");
@@ -101,6 +102,8 @@ const getLeetcodeProfile = async (username, year) => {
 
   return {
     username: user.username,
+    ranking: user.profile?.ranking ?? null,
+    recentSubmissions: recentSubmissions ?? [],
 
     stats: {
       totalSolved: solved.all || 0,
