@@ -6,11 +6,24 @@ const GET_LEETCODE_PROFILE_QUERY = `
     $year: Int
     $limit: Int!
   ) {
+    allQuestionsCount {
+      difficulty
+      count
+    }
+
     matchedUser(username: $username) {
       username
 
       profile {
         ranking
+      }
+
+      badges {
+        id
+        name
+        displayName
+        icon
+        creationDate
       }
 
       userCalendar(year: $year) {
@@ -100,6 +113,12 @@ const getLeetcodeProfile = async (username, year) => {
     solved[item.difficulty.toLowerCase()] = item.count;
   }
 
+  const problemTotals = {};
+
+  for (const item of result.data?.allQuestionsCount || []) {
+    problemTotals[item.difficulty.toLowerCase()] = item.count;
+  }
+
   return {
     username: user.username,
     ranking: user.profile?.ranking ?? null,
@@ -107,10 +126,18 @@ const getLeetcodeProfile = async (username, year) => {
 
     stats: {
       totalSolved: solved.all || 0,
-      totalSubmissions,
+      totalProblems: problemTotals.all || 0,
+
       easySolved: solved.easy || 0,
+      totalEasy: problemTotals.easy || 0,
+
       mediumSolved: solved.medium || 0,
+      totalMedium: problemTotals.medium || 0,
+
       hardSolved: solved.hard || 0,
+      totalHard: problemTotals.hard || 0,
+
+      totalSubmissions,
       streak: calendar?.streak || 0,
       totalActiveDays: calendar?.totalActiveDays || 0,
     },
