@@ -1,9 +1,17 @@
 const LEETCODE_GRAPHQL_URL = "https://leetcode.com/graphql";
 
 const GET_LEETCODE_PROFILE_QUERY = `
-  query userProfileCalendar($username: String!, $year: Int) {
+  query userProfileCalendar(
+    $username: String!
+    $year: Int
+    $limit: Int!
+  ) {
     matchedUser(username: $username) {
       username
+
+      profile {
+        ranking
+      }
 
       userCalendar(year: $year) {
         activeYears
@@ -20,6 +28,16 @@ const GET_LEETCODE_PROFILE_QUERY = `
         }
       }
     }
+
+    recentAcSubmissionList(
+      username: $username
+      limit: $limit
+    ) {
+      id
+      title
+      titleSlug
+      timestamp
+    }
   }
 `;
 
@@ -35,6 +53,7 @@ const getLeetcodeProfile = async (username, year) => {
       variables: {
         username,
         year,
+        limit: 6,
       },
     }),
   });
