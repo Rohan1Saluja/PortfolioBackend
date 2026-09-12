@@ -123,6 +123,7 @@ const getLeetcodeProfile = async (username, year) => {
     username: user.username,
     ranking: user.profile?.ranking ?? null,
     recentSubmissions: recentSubmissions ?? [],
+    badges: user.badges ?? [],
 
     stats: {
       totalSolved: solved.all || 0,
